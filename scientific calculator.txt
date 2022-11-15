@@ -20,7 +20,6 @@ def getvals(event):
             time.sleep(3)
             sc_variable.set('')
             screen.update()
-            status_var.set('Ready...')
             screen.update()
     else:
         sc_variable.set(f'{sc_variable.get()}{value}')
@@ -32,7 +31,7 @@ canvas_height = 620
 root.geometry(f'{canvas_width}x{canvas_height}')
 root.maxsize(canvas_width, canvas_height)
 root.minsize(canvas_width, canvas_height)
-root.title('CalCulator')
+root.title('Scientific Calculator')
 
 
 sc_variable = StringVar()
@@ -174,8 +173,4 @@ count = 0
 for i in range(6):
     buttons[count].grid(row=5, column=i)
     count += 1
-status_var = StringVar()
-status_var.set('Ready...')
-Label(root, textvariable=status_var, relief=SUNKEN, anchor='w',
-      borderwidth=3, bg='honeydew', fg='red').pack(side=BOTTOM, fill=X)
 root.mainloop()
