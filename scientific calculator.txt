@@ -1,6 +1,4 @@
 from tkinter import *
-import tkinter.messagebox as tmsg
-import time
 from math import *
 
 
@@ -31,7 +29,7 @@ canvas_height = 620
 root.geometry(f'{canvas_width}x{canvas_height}')
 root.maxsize(canvas_width, canvas_height)
 root.minsize(canvas_width, canvas_height)
-root.title('Scientific Calculator')
+root.title('CalCulator')
 
 
 sc_variable = StringVar()
@@ -42,17 +40,17 @@ screen.pack(pady=30)
 f = Frame(root)
 f.pack()
 b1 = Button(f, text='7', font='lucida 15 bold', padx=20, pady=20,
-            borderwidth=3, fg='black', bg='pink', width=3)
+            borderwidth=3, fg='black', bg='yellow', width=3)
 b2 = Button(f, text='8', font='lucida 15 bold', padx=20, pady=20,
-            borderwidth=3, fg='black', bg='pink', width=3)
+            borderwidth=3, fg='black', bg='yellow', width=3)
 b3 = Button(f, text='9', font='lucida 15 bold', padx=20, pady=20,
-            borderwidth=3, fg='black', bg='pink', width=3)
+            borderwidth=3, fg='black', bg='yellow', width=3)
 b4 = Button(f, text='*', font='lucida 15 bold', padx=20, pady=20,
-            borderwidth=3, fg='black', bg='powder blue', width=3)
+            borderwidth=3, fg='black', bg='red', width=3)
 b5 = Button(f, text='sin', font='lucida 15 bold', padx=20, pady=20,
-            borderwidth=3, fg='black', bg='powder blue', width=3)
+            borderwidth=3, fg='black', bg='orange', width=3)
 b6 = Button(f, text='(', font='lucida 15 bold', padx=20, pady=20,
-            borderwidth=3, fg='black', bg='powder blue', width=3)
+            borderwidth=3, fg='black', bg='blue', width=3)
 
 b1.bind('<Button-1>', getvals)
 b2.bind('<Button-1>', getvals)
@@ -69,17 +67,17 @@ for i in range(6):
 f = Frame(root)
 f.pack()
 b1 = Button(f, text='4', font='lucida 15 bold', padx=20, pady=20,
-            borderwidth=3, fg='black', bg='pink', width=3)
+            borderwidth=3, fg='black', bg='yellow', width=3)
 b2 = Button(f, text='5', font='lucida 15 bold', padx=20, pady=20,
-            borderwidth=3, fg='black', bg='pink', width=3)
+            borderwidth=3, fg='black', bg='yellow', width=3)
 b3 = Button(f, text='6', font='lucida 15 bold', padx=20, pady=20,
-            borderwidth=3, fg='black', bg='pink', width=3)
+            borderwidth=3, fg='black', bg='yellow', width=3)
 b4 = Button(f, text='-', font='lucida 15 bold', padx=20, pady=20,
-            borderwidth=3, fg='black', bg='powder blue', width=3)
+            borderwidth=3, fg='black', bg='red', width=3)
 b5 = Button(f, text='cos', font='lucida 15 bold', padx=20, pady=20,
-            borderwidth=3, fg='black', bg='powder blue', width=3)
+            borderwidth=3, fg='black', bg='orange', width=3)
 b6 = Button(f, text=')', font='lucida 15 bold', padx=20, pady=20,
-            borderwidth=3, fg='black', bg='powder blue', width=3)
+            borderwidth=3, fg='black', bg='blue', width=3)
 
 b1.bind('<Button-1>', getvals)
 b2.bind('<Button-1>', getvals)
@@ -96,17 +94,17 @@ for i in range(6):
 f = Frame(root)
 f.pack()
 b1 = Button(f, text='1', font='lucida 15 bold', padx=20, pady=20,
-            borderwidth=3, fg='black', bg='pink', width=3)
+            borderwidth=3, fg='black', bg='yellow', width=3)
 b2 = Button(f, text='2', font='lucida 15 bold', padx=20, pady=20,
-            borderwidth=3, fg='black', bg='pink', width=3)
+            borderwidth=3, fg='black', bg='yellow', width=3)
 b3 = Button(f, text='3', font='lucida 15 bold', padx=20, pady=20,
-            borderwidth=3, fg='black', bg='pink', width=3)
+            borderwidth=3, fg='black', bg='yellow', width=3)
 b4 = Button(f, text='+', font='lucida 15 bold', padx=20, pady=20,
-            borderwidth=3, fg='black', bg='powder blue', width=3)
+            borderwidth=3, fg='black', bg='red', width=3)
 b5 = Button(f, text='tan', font='lucida 15 bold', padx=20, pady=20,
-            borderwidth=3, fg='black', bg='powder blue', width=3)
+            borderwidth=3, fg='black', bg='orange', width=3)
 b6 = Button(f, text='%', font='lucida 15 bold', padx=20, pady=20,
-            borderwidth=3, fg='black', bg='powder blue', width=3)
+            borderwidth=3, fg='black', bg='pink', width=3)
 
 b1.bind('<Button-1>', getvals)
 b2.bind('<Button-1>', getvals)
@@ -123,17 +121,17 @@ for i in range(6):
 f = Frame(root)
 f.pack()
 b1 = Button(f, text='.', font='lucida 15 bold', padx=20, pady=20,
-            borderwidth=3, fg='black', bg='powder blue', width=3)
-b2 = Button(f, text='0', font='lucida 15 bold', padx=20, pady=20,
             borderwidth=3, fg='black', bg='pink', width=3)
+b2 = Button(f, text='0', font='lucida 15 bold', padx=20, pady=20,
+            borderwidth=3, fg='black', bg='yellow', width=3)
 b3 = Button(f, text='sinh', font='lucida 15 bold', padx=20, pady=20,
-            borderwidth=3, fg='black', bg='powder blue', width=3)
+            borderwidth=3, fg='black', bg='orange', width=3)
 b4 = Button(f, text='cosh', font='lucida 15 bold', padx=20, pady=20,
-            borderwidth=3, fg='black', bg='powder blue', width=3)
+            borderwidth=3, fg='black', bg='orange', width=3)
 b5 = Button(f, text='tanh', font='lucida 15 bold', padx=20, pady=20,
-            borderwidth=3, fg='black', bg='powder blue', width=3)
+            borderwidth=3, fg='black', bg='orange', width=3)
 b6 = Button(f, text='pi', font='lucida 15 bold', padx=20, pady=20,
-            borderwidth=3, fg='black', bg='powder blue', width=3)
+            borderwidth=3, fg='black', bg='blue', width=3)
 
 b1.bind('<Button-1>', getvals)
 b2.bind('<Button-1>', getvals)
@@ -150,15 +148,15 @@ for i in range(6):
 f = Frame(root)
 f.pack()
 b1 = Button(f, text='log10', font='lucida 15 bold', padx=20, pady=20,
-            borderwidth=3, fg='black', bg='powder blue', width=3)
+            borderwidth=3, fg='black', bg='blue', width=3)
 b2 = Button(f, text='exp', font='lucida 15 bold', padx=20,
             pady=20, borderwidth=3, fg='black', bg='pink', width=3)
 b3 = Button(f, text='/', font='lucida 15 bold', padx=20, pady=20,
-            borderwidth=3, fg='black', bg='powder blue', width=3)
+            borderwidth=3, fg='black', bg='red', width=3)
 b4 = Button(f, text='clr', font='lucida 15 bold', padx=20, pady=20,
             borderwidth=3, fg='black', bg='lime green', width=3)
 b5 = Button(f, text='log', font='lucida 15 bold', padx=20, pady=20,
-            borderwidth=3, fg='black', bg='powder blue', width=3)
+            borderwidth=3, fg='black', bg='blue', width=3)
 b6 = Button(f, text='=', font='lucida 15 bold', padx=20, pady=20,
             borderwidth=3, fg='black', bg='lime green', width=3)
 
